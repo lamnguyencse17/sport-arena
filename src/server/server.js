@@ -5,9 +5,9 @@ import {} from "dotenv/config";
 
 // import module from "./config/initDb";
 
-import module from "./config/initDb";
+import initDb from "./config/initDb";
 
-module();
+initDb();
 
 const SERVER_PORT = 3000;
 const app = express();
