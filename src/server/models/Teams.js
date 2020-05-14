@@ -1,5 +1,6 @@
-const mongoose = require("mongoose");
-const Users = require("./Users");
+import mongoose from "mongoose";
+
+import Users from "./Users";
 
 const TeamSchema = new mongoose.Schema({
   name: {
@@ -8,7 +9,7 @@ const TeamSchema = new mongoose.Schema({
   },
   agent: {
     type: mongoose.Types.ObjectId,
-    ref : 'Users'
+    ref: "Users",
   },
   teamMate: [Users],
   teamRegistration: [Users],
@@ -21,4 +22,4 @@ const TeamSchema = new mongoose.Schema({
 
 const Teams = mongoose.model("Team", TeamSchema);
 
-module.exports = Teams;
+export default Teams;

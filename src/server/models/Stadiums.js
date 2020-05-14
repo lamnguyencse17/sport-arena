@@ -1,5 +1,5 @@
-const mongoose = require("mongoose");
-const Fields = require("./Fields");
+import mongoose from "mongoose";
+import Fields from "./Fields";
 
 const StadiumSchema = new mongoose.Schema({
   name: {
@@ -23,4 +23,4 @@ const StadiumSchema = new mongoose.Schema({
 
 const Stadiums = mongoose.model("Stadiums", StadiumSchema);
 
-module.exports = Stadiums;
+export default Stadiums;

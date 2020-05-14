@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-module.exports = () => {
+const module = () => {
   mongoose
     .connect(process.env.MONGODB_URI, {
       user: process.env.DB_USER,
@@ -35,3 +35,5 @@ module.exports = () => {
     });
   });
 };
+
+export default module;

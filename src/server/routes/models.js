@@ -5,4 +5,4 @@ router.use("/users", (req, res) => res.send("Hello"));
 
 router.use("/teams", (req, res) => res.send("Hello"));
 
-module.exports = router;
+export default router;

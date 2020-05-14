@@ -3,4 +3,4 @@ const router = express.Router();
 
 //CRUD
 
-module.exports = router;
+export default router;

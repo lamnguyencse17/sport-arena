@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+import mongoose from 'mongoose'
 
-const Stadiums = require("Stadiums");
+import Stadiums from ('./Stadiums');
 const HostSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -17,4 +17,4 @@ const HostSchema = new mongoose.Schema({
 
 const Hosts = mongoose.model("Hosts", HostSchema);
 
-module.exports = Hosts;
+export default Hosts;
