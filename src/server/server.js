@@ -1,6 +1,13 @@
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
+import {} from "dotenv/config";
+
+// import module from "./config/initDb";
+
+import initDb from "./config/initDb";
+
+initDb();
 
 const SERVER_PORT = 3000;
 const app = express();
