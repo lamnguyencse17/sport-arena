@@ -2,7 +2,9 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 
-const dotenv = require("dotenv").config();
+import dotenv from "dotenv";
+
+dotenv = dotenv.config();
 
 require("./config/initDb")();
 const SERVER_PORT = 3000;
